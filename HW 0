@@ -1,0 +1,61 @@
+/* Personal Space Show from Rick and Morty:
+ *
+ * The show is hosted by a man named Phillip Jacobs who is extremely concerned with his personal space
+ * and takes it very seriously. At times he's paranoid that someone is close to him, even though he is
+ * alone. After the intro he will direct the camera towards a projector and show slides saying "personal
+ * space", and telling the viewers to stay out of his personal space. At the end of the show he removes
+ * his own skin on live TV because he does not care to have it on his personal space.
+ */
+
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+int main(int argc, char** argv) {
+
+
+		int i = 1;
+		// Get the i th command line argument and convert to int
+		int c = atoi(*(argv + i + 1)); 
+		
+		//this is my stuff
+		cout << "Welcome to the Personal Space Show!!\n\n";
+		for (i = 1; i < argc; i++)
+		{
+		/*here is Phillip Jacobs presentation, 1-9. If you go over or under these numbers
+		it will say that it doesn't recognize it*/
+			switch (i)
+		{
+		case 1: cout << "One: Personal Space\n";
+			break;
+
+		case 2: cout << "Two: Personal Space\n";
+			break;
+
+		case 3: cout << "Three: Stay out of my personal space\n";
+			break;
+
+		case 4: cout << "Four: Keep away from my personal space\n";
+			break;
+
+		case 5: cout << "Five: Get outta dat personal space\n";
+			break;
+
+		case 6: cout << "Six: Stay away from my personal space\n";
+			break;
+
+		case 7: cout << "Seven: Keep away from dat personal space\n";
+			break;
+
+		case 8: cout << "Eight: Personal space\n";
+			break;
+
+		case 9: cout << "Nine: Personal space\n";
+			break;
+
+		default: cout << i << ": Number not recognized";
+		}
+		}
+   
+	return 0; // Exit the program
+}
